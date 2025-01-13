@@ -225,6 +225,8 @@ for (let i = 1; i <= 25; i++) {
  * buat looping untuk menghasilkan nilai rata-rata dari sebuah array bilangan bulat menggunakan function
  */
 
+console.log("====================");
+
 const dataBilanganBulat = [2, 4, 6, 8, 10];
 
 function rata(dataBilanganBulat) {
@@ -239,13 +241,32 @@ console.log("Rata rata data bilangan bulat", rata(dataBilanganBulat));
 /** soal 11: for loop
  * buat function untuk menghitung jumlah huruf kapital pada sebuah string
  */
+
 let string1 = "Hello World";
 let string2 = "Kiw, GImana Kabarnya?";
 let string3 = "JAVaScRipT";
 
+console.log("====================");
+
+function hitungHurufKapital(string) {
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == string[i].toUpperCase()) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(hitungHurufKapital(string1));
+console.log(hitungHurufKapital(string2));
+console.log(hitungHurufKapital(string3));
+
 /** soal 12 : for loop
  * buat fungsi untuk mencari nilai tertinggi dari sebuah array
  */
+
+console.log("====================");
+
 const nilaiTertinggi = [1, 34, 21, 54, 6567, 234, 65865, 98764, 23, 453];
 
 function biggestNumber(nilaiTertinggi) {
@@ -264,8 +285,15 @@ console.log(biggestNumber(nilaiTertinggi));
  * dengan jumlah baris yang bisa ditentukan oleh user melalui parameter fungsi
  */
 
-function piramida(n) {
+console.log("====================");
+
+const pyramid = (n) => {
   for (let i = 1; i <= n; i++) {
-    console.log("*".repeat(i));
+    let k = "";
+    for (let j = 1; j <= 2 * n - 1; j++) {
+      j >= n + 1 - i && j <= n - 1 + i ? (k += "*") : (k += " ");
+    }
+    console.log(k);
   }
-}
+};
+pyramid(5);
