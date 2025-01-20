@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=support_agent"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>My Portofolio</title>
+  </head>
+  <body>
+    <nav
+      class="bg-black flex justify-between items-center sticky top-0 lg:px-4"
+    >
+      <div
+        class="flex items-center px-2 lg:px[50px] gap-5 lg:gap-10 text-white font-bold p-2"
+      >
+        <a href="index.html"
+          ><img src="assets/img/aigen-logo.png" class="h-10 w-auto" alt="logo"
+        /></a>
+        <a href="./index.html">Home</a>
+        <a href="./blog/index.html">Blog</a>
+      </div>
+      <div
+        class="right-nav lg:bg-[#eb374e] lg:hover:bg-[#f5121d] px-3 py-[7px] rounded-lg text-white font-bold"
+      >
+        <a href="./contact/index.html" class="hidden lg:block" type="button"
+          >Contact Me</a
+        >
+        <a href="./contact/index.html" class="block lg:hidden"
+          ><span class="material-symbols-outlined"> support_agent </span></a
+        >
+      </div>
+    </nav>
+
+    <!-- content -->
+    <section
+      class="personal flex flex-col px-4 lg:px[50px] py-5 lg:py-10 gap-8 lg:flex lg:flex-row"
+    >
+      <!-- card -->
+      <div class="left">
+        <div class="card w-full border p-4 rounded-xl lg:w-[450px]">
+          <div class="images">
+            <img
+              class="rounded-xl max-w-full"
+              src="assets/img/ridho.jpg"
+              alt="profil"
+            />
+          </div>
+          <div class="header mt-2">
+            <h1 class="text-xl font-bold">Ridho Syawali</h1>
+          </div>
+          <div class="content py-2 mb-2">
+            <p class="font-semibold text-md">
+              Design is the soul, code is the body. I combine both to create
+              meaningful work.
+            </p>
+            <p>Email : ridhosyawali31@gmail.com</p>
+            <p>Address : Tangerang</p>
+          </div>
+          <table class="w-full border p-[6px] border-collapse">
+            <tr class="font-semibold p-[6px] text-center">
+              <th class="p-2 border">Project</th>
+              <th class="p-2 border">Year</th>
+              <th class="p-2 border">Link</th>
+            </tr>
+            <tr class="p-[6px] text-center bg-white even:bg-pink-200">
+              <td>Mockup Website PSSI</td>
+              <td>2024</td>
+              <td>
+                <a
+                  href="https://pssi-lyart.vercel.app/"
+                  target="_blank"
+                  class="text-center"
+                  ><img
+                    class="w-[20px] h-[20px] ml-6 lg:w-[25px] lg:h-[25px]"
+                    src="assets/img/link_icon.png"
+                    alt="aigen logo"
+                    width="10"
+                    height="10"
+                /></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- about -->
+      <div class="right">
+        <h1 class="font-bold text-2xl lg:text-[32px]">About Me</h1>
+        <hr />
+        <h2 class="font-semibold text-2xl lg:text-[32px] my-3">
+          Junior Web Developer
+        </h2>
+        <hr />
+        <p class="my-5 text-justify">
+          I discovered my love for coding when I started college. Through
+          semester assignment projects, I had the opportunity to explore various
+          programming languages and develop my problem-solving skills.
+          Collaborating with teammates provided valuable experience in producing
+          work that is useful for users. In addition to coding, I am also active
+          in various organizations as a BEM secretary, which has grown my
+          confidence and communication skills. With a high curiosity, I am
+          always driven to continue learning and finding solutions to challenges
+          in the programming world.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <div class="frontend border rounded-xl p-4 max-w-[350px]">
+            <div class="flex">
+              <img class="w-[60px]" src="assets/img/html.png" alt="html" />
+              <img class="w-[60px]" src="assets/img/css.png" alt="css" />
+              <img class="w-[60px]" src="assets/img/javascript.png" alt="js" />
+            </div>
+            <h3 class="font-bold text-xl my-1">Frontend Developer</h3>
+            <p>
+              My commitment is to turn ideas into interfaces that leave a
+              positive and enjoyable impression on every user.
+            </p>
+          </div>
+          <div class="backend border rounded-xl p-4 max-w-[350px]">
+            <img class="w-[60px]" src="assets/img/nodejs.png" alt="node" />
+            <h3>Backend Developer</h3>
+
+            <p>
+              Being part of this backend gives me the opportunity to build a
+              strong foundation for an application, because it is from this
+              foundation that the house can stand.
+            </p>
+          </div>
+        </div>
+        <div class="findme flex items-center mt-4 gap-2">
+          <h2 class="text-xl font-semibold">Find Me On :</h2>
+          <div class="social flex items-center gap-5">
+            <a href="mailto:ridhosyawali31@gmail.com" target="_blank">
+              <img
+                class="w-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/768px-Gmail_icon_%282020%29.svg.png"
+                alt="gmail"
+              />
+            </a>
+            <a href="https://wa.me/85693113913" target="_blank">
+              <img
+                class="w-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                alt="WhatsApp"
+              />
+            </a>
+            <a href="https://www.instagram.com/ridholsss/" target="_blank">
+              <img
+                class="w-[50px]"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                alt="instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+  <footer class="flex bg-black text-white py-3 justify-center">
+    Copyright &copy; | &nbsp; <span>Ridho Syawali</span>
+  </footer>
+</html>

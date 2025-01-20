@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        margin: 0px;
+        font-family: "Open Sans", serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              "3xl": "10px 10px 50px 20px rgba(0, 0, 0, 0.3)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="bg-[#b40001] text-white flex flex-row w-full h-11 lg:h-20 items-center p-2 shadow-2xl sticky top-0 z-50 px-5"
+    >
+      <div class="lg:w-[10%] flex justify-end items-center">
+        <img
+          class="lg:w-[130px]"
+          src="./assets/img/white-logo15895633361617866331.png"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-row justify-center gap-6 lg:w-[80%]">
+        <a class="mt-1" href="../index.html">Berita</a>
+        <a class="mt-1" href="../index.html">Tim</a>
+        <a class="mt-1" href="../index.html">Pertandingan</a>
+        <a class="mt-1" href="../index.html">Galeri</a>
+        <a class="mt-1" href="../index.html">Klub</a>
+        <a class="mt-1" href="../index.html">Marketing</a>
+        <a class="mt-1" href="../index.html">Official Store</a>
+        <a class="border border-yellow-400 p-1 rounded-md" href="../index.html"
+          >Shout & Vote</a
+        >
+        <a class="border border-yellow-400 p-1 rounded-md" href="../index.html"
+          >Persija Access</a
+        >
+      </div>
+      <div class="lg:w-[10%] flex flex-row gap-3 justify-start items-center">
+        <a href="../index.html">
+          <box-icon
+            name="twitter"
+            type="logo"
+            size="sm"
+            color="white"
+          ></box-icon>
+        </a>
+        <a href="../index.html">
+          <box-icon
+            name="facebook"
+            color="white"
+            size="sm"
+            type="logo"
+          ></box-icon>
+        </a>
+        <a href="../index.html">
+          <box-icon
+            name="instagram-alt"
+            type="logo"
+            size="sm"
+            color="white"
+          ></box-icon>
+        </a>
+        <a href="../index.html">
+          <box-icon
+            name="tiktok"
+            type="logo"
+            size="sm"
+            color="white"
+          ></box-icon>
+        </a>
+      </div>
+    </nav>
+    <!-- section 1 -->
+    <section class="bg-[#b40001] text-white px-20 py-20">
+      <div class="flex flex-row justify-between">
+        <h2 class="text-2xl font-bold">Berita</h2>
+        <span>Lihat Semua +</span>
+      </div>
+      <div>
+        <div class="grid grid-cols-3 gap-1">
+          <div
+            class="mt-10 card shadow-3xl w-[350px] h-[250px] relative transition-transform duration-300 hover:scale-105 overflow-hidden hover:cursor-pointer"
+            onclick="location.href='../index.html'"
+          >
+            <img
+              src="assets/img/penonton.jpg"
+              alt="2"
+              class="w-full h-full object-cover object-top filter brightness-75"
+            />
+            <div class="absolute bottom-0 filter backdrop-blur-md w-full p-2">
+              <h3 class="text-lg font-bold">
+                PENONTON PERSIJA VS PERSITA TERBANYAK DI LIGA 1, TERIMAKASIH
+                JAKMANIA
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mt-10 card shadow-3xl w-[350px] h-[250px] relative transition-transform duration-300 hover:scale-105 overflow-hidden hover:cursor-pointer"
+            onclick="location.href='../index.html'"
+          >
+            <img
+              src="assets/img/rayhan.jpg"
+              alt="2"
+              class="w-full h-full object-cover object-top filter brightness-75"
+            />
+            <div class="absolute bottom-0 filter backdrop-blur-md w-full p-2">
+              <h3 class="text-lg font-bold">
+                RAYHAN HANNAN: PERJUANGAN MASIH PANJANG
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mt-10 card shadow-3xl w-[350px] h-[250px] relative transition-transform duration-300 hover:scale-105 overflow-hidden hover:cursor-pointer"
+            onclick="location.href='../index.html'"
+          >
+            <img
+              src="assets/img/tos.jpg"
+              alt="2"
+              class="w-full h-full object-cover object-top filter brightness-75"
+            />
+            <div class="absolute bottom-0 filter backdrop-blur-md w-full p-2">
+              <h3 class="text-lg font-bold">
+                REVIEW PERSIJA VS PERSITA: PERUBAHAN DIBABAK KEDUA JADI KUNCI
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mt-10 card shadow-3xl w-[350px] h-[250px] relative transition-transform duration-300 hover:scale-105 overflow-hidden hover:cursor-pointer"
+            onclick="location.href='../index.html'"
+          >
+            <img
+              src="assets/img/gus.jpg"
+              alt="2"
+              class="w-full h-full object-cover object-top filter brightness-75"
+            />
+            <div class="absolute bottom-0 filter backdrop-blur-md w-full p-2">
+              <h3 class="text-lg font-bold">
+                GUSTAVO ALMEIDA PUNYA FEELING BAGUS SAAT JAMU PERSITA
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mt-10 card shadow-3xl w-[350px] h-[250px] relative transition-transform duration-300 hover:scale-105 overflow-hidden hover:cursor-pointer"
+            onclick="location.href='../index.html'"
+          >
+            <img
+              src="assets/img/pena.jpg"
+              alt="2"
+              class="w-full h-full object-cover object-top filter brightness-75"
+            />
+            <div class="absolute bottom-0 filter backdrop-blur-md w-full p-2">
+              <h3 class="text-lg font-bold">
+                PREVIEW PERSIJA VS PERSITA: BIDIK KEMENANGAN KE-101
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mt-10 card shadow-3xl w-[350px] h-[250px] relative transition-transform duration-300 hover:scale-105 overflow-hidden hover:cursor-pointer"
+            onclick="location.href='../index.html'"
+          >
+            <img
+              src="assets/img/young.jpg"
+              alt="2"
+              class="w-full h-full object-contain object-top filter brightness-75"
+            />
+            <div class="absolute bottom-0 filter backdrop-blur-md w-full p-2">
+              <h3 class="text-lg font-bold">
+                ALWI FADILAH, ADRE ARIDO, DAN DIA SYAYID AKAN MENJALANI MASA
+                PEMINJAMAN
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="bg-[#c21700] text-white px-20 py-20">
+      <div><h1 class="font-bold text-2xl">PERTANDINGAN</h1></div>
+      <div class="flex flex-row gap-6 mt-10">
+        <div class="border border-[#cd351b] lg: w-[50%] h-[500px]">
+          <div
+            class="flex flex-row justify-between px-4 bg-[#242424] h-12 items-center"
+          >
+            <span class="font-bold">Next Match</span> <span>Lihat Semua +</span>
+          </div>
+          <div class="flex flex-row justify-between px-8 pt-6 items-center">
+            <div class="flex flex-col items-center gap-4 font-bold">
+              <img
+                src="./assets/img/persis.png"
+                alt="persis"
+                class="w-28 h-auto"
+              />
+              <p>Persis</p>
+            </div>
+            <span
+              class="font-bold text-sm bg-[#b40001] rounded-xl py-[2px] px-4"
+              >VS</span
+            >
+            <div class="flex flex-col items-center gap-4 font-bold">
+              <img
+                src="./assets/img/persija.png"
+                alt="persija"
+                class="w-28 h-auto"
+              />
+              <p>Persija</p>
+            </div>
+          </div>
+          <div
+            class="grid grid-rows-4 gap-1 justify-center text-center items-center"
+          >
+            <span class="font-bold text-xl">BRI Liga 1</span>
+            <div>
+              <p>26 January 2025</p>
+              <p>19:00 WIB</p>
+            </div>
+            <div class="font-bold">Stadion Manahan, Surakarta</div>
+            <div
+              class="bg-[#b40001] rounded-xl py-1 px-1 flex flex-row items-center hover:cursor-pointer"
+            >
+              <span class="font-bold w-full text-sm">Tiket Pertandingan</span>
+            </div>
+          </div>
+        </div>
+        <div class="border border-[#cd351b] lg:w-[50%] h-[500px]">
+          <div
+            class="flex flex-row justify-between px-4 bg-[#242424] h-12 items-center"
+          >
+            <span class="font-bold text-md">Klasemen</span>
+            <span>Lihat Semua +</span>
+          </div>
+          <div style="max-height: 450px; overflow-y: auto">
+            <table class="w-full table-auto border-collapse">
+              <thead class="bg-[#454444] h-[50px]">
+                <tr>
+                  <th class="pl-4 pr-5 text-left w-1">Pos</th>
+                  <th class="pl-2 text-left">Team</th>
+                  <th class="px-2">P</th>
+                  <th class="px-2">W</th>
+                  <th class="px-2">D</th>
+                  <th class="px-2">L</th>
+                  <th class="px-2">PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">1</td>
+                  <td class="text-left pl-2 font-semibold">Persib</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">11</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">40</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">2</td>
+                  <td class="text-left pl-2 font-semibold">
+                    Persebaya Surabaya
+                  </td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">11</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">37</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">3</td>
+                  <td class="text-left pl-2 font-semibold">Persija</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">11</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">37</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">4</td>
+                  <td class="text-left pl-2 font-semibold">Persik Kediri</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">30</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">5</td>
+                  <td class="text-left pl-2 font-semibold">Persita</td>
+                  <td class="text-center">19</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">30</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">6</td>
+                  <td class="text-left pl-2 font-semibold">PSM Makasar</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">30</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">7</td>
+                  <td class="text-left pl-2 font-semibold">Dewa United FC</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">28</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">8</td>
+                  <td class="text-left pl-2 font-semibold">Bali United FC</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">8</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">28</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">9</td>
+                  <td class="text-left pl-2 font-semibold">Arema FC</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">8</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">28</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">10</td>
+                  <td class="text-left pl-2 font-semibold">
+                    Borneo FC Samarinda
+                  </td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">26</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">11</td>
+                  <td class="text-left pl-2 font-semibold">PSBS Biak</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">8</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">8</td>
+                  <td class="text-center">26</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">12</td>
+                  <td class="text-left pl-2 font-semibold">Malut United FC</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">22</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">13</td>
+                  <td class="text-left pl-2 font-semibold">PSS Sleman</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">21</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">14</td>
+                  <td class="text-left pl-2 font-semibold">PSIS Semarang</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">18</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">15</td>
+                  <td class="text-left pl-2 font-semibold">PS Barito Putera</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">11</td>
+                  <td class="text-center">13</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">16</td>
+                  <td class="text-left pl-2 font-semibold">Semen Padang FC</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">11</td>
+                  <td class="text-center">13</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">17</td>
+                  <td class="text-left pl-2 font-semibold">Madura United FC</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">12</td>
+                </tr>
+                <tr class="h-[50px] border-b border-[#cd351b]">
+                  <td class="text-left pl-4 pr-5">18</td>
+                  <td class="text-left pl-2 font-semibold">Persis</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="bg-[#b40001] text-white">
+      <div class="pl-20 py-20 flex flex-row gap-52 items-center">
+        <div class="gird grid-rows-2">
+          <h2 class="text-2xl font-bold mb-3">FOTO</h2>
+          <span>Lihat Semua +</span>
+        </div>
+        <div class="overflow-hidden h-[300px] shadow-3xl">
+          <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
+            <img
+              src="./assets/img/matchgal.jpg"
+              alt="Slide 1"
+              class="snap-start object-cover object-center lg:w-[350px] lg:-h-[300px] transition duration-300 hover:scale-x-105"
+            />
+            <img
+              src="./assets/img/program.jpg"
+              class="snap-start object-cover object-center lg:w-[350px] lg:h-[300px] transition duration-300 hover:scale-x-105"
+              alt="Slide 2"
+            />
+            <img
+              src="./assets/img/csr.jpg"
+              class="snap-start object-cover object-center lg:w-[350px] lg:h-[300px] transition duration-300 hover:scale-x-105"
+              alt="Slide 3"
+            />
+            <img
+              src="./assets/img/epa.jpg"
+              class="snap-start object-cover object-center lg:w-[350px] lg:h-[300px] transition duration-300 hover:scale-x-105"
+              alt="Slide 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section class="bg-[#fff] text-black">
+      <div class="pl-20 py-20 flex flex-row gap-24 items-center">
+        <div class="gird grid-rows-2">
+          <h2 class="text-2xl font-bold mb-3">PERSIJA STORE</h2>
+          <span>Lihat Semua +</span>
+        </div>
+        <div class="overflow-hidden max-h-[320px]">
+          <div
+            class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-16"
+          >
+            <div class="flex flex-col gap-3 overflow-hidden">
+              <img
+                src="./assets/img/merah.png"
+                alt=""
+                class="snap-start h-[200px] w-full object-cover object-center transition duration-300 hover:scale-105"
+              />
+              <p class="font-bold text-center">HOME - MERAH</p>
+              <p
+                class="text-center mt-2 bg-[#b40001] text-white rounded-xl hover:cursor-pointer"
+              >
+                Rp 7.999.000
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 overflow-hidden">
+              <img
+                src="./assets/img/putih.png"
+                alt=""
+                class="snap-start h-[200px] w-full object-cover object-center transition duration-300 hover:scale-105"
+              />
+              <p class="font-bold text-center">AWAY - PUTIH</p>
+              <p
+                class="text-center mt-2 bg-[#b40001] text-white rounded-xl hover:cursor-pointer"
+              >
+                Rp 799.900
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 overflow-hidden">
+              <img
+                src="./assets/img/hitam.png"
+                alt=""
+                class="snap-start h-[200px] w-full object-cover object-center transition duration-300 hover:scale-105"
+              />
+              <p class="font-bold text-center">ALTERNATIF - HITAM</p>
+              <p
+                class="text-center mt-2 bg-[#b40001] text-white rounded-xl hover:cursor-pointer"
+              >
+                Rp 799.900
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 overflow-hidden">
+              <img
+                src="./assets/img/hijau.png"
+                alt=""
+                class="snap-start h-[200px] w-full object-cover object-center transition duration-300 hover:scale-105"
+              />
+              <p class="font-bold text-center">HIJAU - MERAH</p>
+              <p
+                class="text-center mt-2 bg-[#b40001] text-white rounded-xl hover:cursor-pointer"
+              >
+                Rp 7.999.000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 -->
+    <section class="bg-slate-50">
+      <div class="flex flex-row justify-center">
+        <img src="./assets/img/indomie.png" alt="" class="w-[150px] h-auto" />
+      </div>
+      <div class="flex flex-row justify-center items-center gap-10">
+        <img src="./assets/img/aman.jpg" alt="" class="w-[150px] h-auto" />
+        <img src="./assets/img/socios.png" alt="" class="w-[150px] h-auto" />
+        <img src="./assets/img/juara.png" alt="" class="w-[150px] h-auto" />
+      </div>
+      <div class="flex flex-row justify-center items-center gap-10">
+        <img src="./assets/img/elite.png" alt="" class="w-[150px] h-auto" />
+        <img src="./assets/img/pocari.png" alt="" class="w-[100px] h-[60px]" />
+      </div>
+    </section>
+  </body>
+  <footer class="bg-[#1d2228] px-10 py-4 flex flex-row justify-between">
+    <div>
+      <img
+        src="./assets/img/white-logo15895633361617866331.png"
+        alt=""
+        class="lg:w-[170px]"
+      />
+    </div>
+    <div class="text-white flex flex-row gap-10 pr-10 items-center">
+      <a href="./about/index.html">Tentang Persija</a>
+      <a href="">Kontak</a>
+    </div>
+  </footer>
+</html>
