@@ -4,8 +4,555 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        margin: 0px;
+        font-family: "Open Sans", serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              "3xl": "10px 10px 50px 20px rgba(0, 0, 0, 0.3)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <p>halo</p>
+    <!-- navbar -->
+    <nav
+      class="bg-[#b40001] text-white flex flex-row justify-between lg:flex lg:flex-row w-full h-11 lg:h-20 items-center p-2 shadow-2xl sticky top-0 z-50 px-5"
+    >
+      <div
+        class="lg:w-[10%] flex justify-end items-center hover:cursor-pointer"
+        onclick="location.href='../index.html'"
+      >
+        <img
+          class="lg:w-[130px] w-24 h-auto"
+          src="../assets/img/white-logo15895633361617866331.png"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-row justify-center gap-6 lg:w-[80%]">
+        <a class="mt-1 hidden lg:block" href="../index.html">Berita</a>
+        <a class="mt-1 hidden lg:block" href="./team/index.html">Tim</a>
+        <a class="mt-1 hidden lg:block" href="../index.html">Pertandingan</a>
+        <a class="mt-1 hidden lg:block" href="../index.html">Galeri</a>
+        <a class="mt-1 hidden lg:block" href="../index.html">Klub</a>
+        <a class="mt-1 hidden lg:block" href="../index.html">Marketing</a>
+        <a class="mt-1 hidden lg:block" href="../index.html">Official Store</a>
+        <a
+          class="border border-yellow-400 p-1 rounded-md hidden lg:block"
+          href="../index.html"
+          >Shout & Vote</a
+        >
+        <a
+          class="border hidden lg:block border-yellow-400 p-1 rounded-md"
+          href="../index.html"
+          >Persija Access</a
+        >
+        <box-icon
+          name="menu"
+          size="md"
+          color="white"
+          class="block lg:hidden right-0"
+        ></box-icon>
+      </div>
+      <div
+        class="lg:w-[10%] flex-row gap-3 justify-start items-center hidden lg:block"
+      >
+        <a href="../index.html">
+          <box-icon
+            name="twitter"
+            type="logo"
+            size="sm"
+            color="white"
+          ></box-icon>
+        </a>
+        <a href="../index.html">
+          <box-icon
+            name="facebook"
+            color="white"
+            size="sm"
+            type="logo"
+          ></box-icon>
+        </a>
+        <a href="../index.html">
+          <box-icon
+            name="instagram-alt"
+            type="logo"
+            size="sm"
+            color="white"
+          ></box-icon>
+        </a>
+        <a href="../index.html">
+          <box-icon
+            name="tiktok"
+            type="logo"
+            size="sm"
+            color="white"
+          ></box-icon>
+        </a>
+      </div>
+    </nav>
+    <!-- section 1 -->
+    <section>
+      <div class="w-full h-full">
+        <img src="../assets/img/banner.jpg" alt="" />
+      </div>
+    </section>
+    <div class="flex flex-rows justify-center">
+      <div
+        class="lg:w-[70%] py-1 flex flex-row justify-center text-3xl font-bold bg-gray-500 text-white"
+      >
+        <h1>TENTANG PERSIJA</h1>
+      </div>
+    </div>
+    <!-- section 2 -->
+    <section class="flex flex-row justify-center py-12">
+      <div
+        class="lg:w-[60%] flex flex-col justify-center items-center gap-8 text-center font-thin lg:text-lg lg:py-20"
+      >
+        <p>
+          Persija Jakarta didirikan oleh Soeri dan Alie pada 28 November 1928
+          dengan nama awal Voetballbond Indonesia Jacatra (VIJ). Berdirinya VIJ
+          saat itu juga sebagai wadah berkumpulnya klub-klub sepak bola
+          nasionalis di Batavia pada masa itu.
+        </p>
+        <p>
+          Nama VIJ berubah menjadi Persija pada tahun 1950 dengan Jusuf Jahja
+          sebagai ketua. Persija pada era 1950-an banyak diisi pemain nasional
+          seperti Tan Liong Houw, Chris Ong, Thio Him Tjiang, Van der Vin,
+          sampai Van der Berg.
+        </p>
+        <p>
+          Persija juga menjadi salah satu pencetus berdirinya Persatuan
+          Sepakbola Seluruh Indonesia (PSSI) pada 19 April 1930. Berawal dari
+          cita-cita yang sama dengan bond dari daerah lain, Persija mengusung
+          semangat persatuan yang tertanam dalam kelahiran PSSI.
+        </p>
+        <p>
+          Memiliki julukan Macan Kemayoran, Persija merupakan tim sepak bola di
+          Indonesia dengan latar belakang sejarah panjang sekaligus menjadi klub
+          tersukses pada kompetisi PSSI dengan koleksi 11 gelar juara.
+        </p>
+        <p>
+          Diawali dari masa kompetisi sebelum kemerdekaan, Persija yang masih
+          bernama VIJ meraih gelar juara pada 1931, 1933, 1934, dan 1938.
+          Memasuki masa Perserikatan, Persija meraih juara pada 1954, 1964,
+          1973, 1975, dan 1979. Sedangkan di era profesional, Persija meraih dua
+          kali juara, yakni pada 2001 dan 2018.
+        </p>
+        <p>
+          Sementara di ajang turnamen, tim yang identik dengan warna merah-putih
+          itu juga meraih sejumlah gelar, yakni Runner Up Copa Indonesia 2005,
+          peringkat 3 Copa Indonesia 2006, peringkat 3 Copa Indonesia 2007 dam
+          Runner Up Piala Indonesia 2018-2019. Persija juga mencatatkan satu
+          gelar Piala Presiden yakni 2018.
+        </p>
+        <p>
+          Gelar yang ditoreh Persija tidak hanya di level nasional, pada
+          kompetisi internasional tim kebanggaan ibu kota juga meraih sejumlah
+          piala. Di antaranya juara Piala Quoch Khan di Vietnam pada 1973, juara
+          Piala Sultan Brunei Darussalam 2000, juara Brunei Invitation Cup 2000
+          dan 2001 serta Boost SportFix Super Cup Malaysia 2018.
+        </p>
+        <p>
+          Selain deretan sejarah yang membuat Persija menjadi klub dengan piala
+          terbanyak di Indonesia, dari sisi penonton, Persija juga kerap
+          mencetak rekor. Sebanyak 413.152 menyaksikan pertandingan Persija
+          secara langsung di stadion. Jumlah tersebut menjadi paling banyak di
+          Indonesia dan Asia Tenggara.
+        </p>
+        <p>
+          Persija juga memecahkan rekor jumlah penonton saat berlaga di AFC Cup.
+          Saat pertandingan melawan Johor Darul Ta'zim 2018 lalu, sebanyak
+          60.157 orang hadir di Stadion Utama Gelora Bung Karno. Jumlah tersebut
+          mematahkan rekor penonton AFC Cup sebelumnya yang dipegang Al Ittihad
+          vs Qadsia FC di Final Piala AFC 2010.
+        </p>
+        <p>
+          Dengan sejarah panjang, membuat Persija terus melahirkan dan dihuni
+          pemain-pemain terbaik untuk Indonesia. Mulai dari Tan Liong Houw,
+          Sinyo Aliandoe, Soetjipto Soentoro, Iswadi Idris hingga generasi
+          Bambang Pamungkas serta Ismed Sofyan.
+        </p>
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section
+      class="flex flex-col items-center text-white"
+      style="
+        background-image: url('../assets/img/texture-1088149_640.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.9;
+      "
+    >
+      <!-- Sejarah Persija -->
+      <div class="bg-black bg-opacity-80 w-full h-full lg:py-24">
+        <div class="w-full h-full flex flex-col items-center gap-3 py-10">
+          <h1 class="text-3xl font-bold">SEJARAH PERSIJA</h1>
+          <p class="text-center lg:text-lg opacity-70 w-[70%]">
+            Persija Jakarta didirikan oleh Soeri dan Alie pada 28 November 1928
+            dengan nama awal Voetballbond Indonesia Jacatra (VIJ).
+          </p>
+        </div>
+        <div class="relative w-full h-screen flex items-center justify-center">
+          <div
+            class="overflow-hidden flex flex-col items-center justify-center w-full lg:h-[700px] lg:py-24"
+          >
+            <div
+              class="flex flex-row gap-8 overflow-x-auto snap-x snap-mandatory lg:w-full scroll-smooth filter shadow-inner"
+              style="scrollbar-width: none"
+            >
+              <div class="min-w-[350px] ml-10 flex flex-col">
+                <img
+                  src="../assets/img/VIJ.webp"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1931</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1931</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/VIJ.webp"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1933</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1933</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/VIJ.webp"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1934</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1934</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/VIJ.webp"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1938</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1938</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Persidja_Djakarta.webp"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#e6bfbf]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1954</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1954</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Persidja_Djakarta.webp"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#e6bfbf]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1964</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1964</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Persija_Jakarta_Jaya_Raya.png"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#ff2323]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1973</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JEJAK JUARA 1973</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Persija_Jakarta_Jaya_Raya.png"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#ff2323]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1975</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JUARA 1975</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Persija_Jakarta_Jaya_Raya.png"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#ff2323]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >1979</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JUARA 1979</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Logo_Persija_Jakarta.png"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#ff2323]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >2001</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JUARA 2001</span
+                >
+              </div>
+              <div class="min-w-[350px] flex flex-col">
+                <img
+                  src="../assets/img/Persija_Jakarta_with_1_star.png"
+                  alt=""
+                  class="snap-center w-auto lg:h-[230px] object-contain bg-[#ff2323]"
+                />
+                <span
+                  class="text-left text-3xl font-bold text-white bg-slate-500 px-2 py-1 w-fit"
+                  >2018</span
+                >
+                <span class="text-yellow-500 font-semibold mt-4 text-sm"
+                  >JUARA 2018</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div
+            class="absolute bottom-10 flex flex-row items-center justify-center gap-2"
+          >
+            <div class="w-4 h-4 bg-yellow-500 rounded-full" id="dot-0"></div>
+            <div class="w-4 h-4 bg-gray-500 rounded-full" id="dot-1"></div>
+            <div class="w-4 h-4 bg-gray-500 rounded-full" id="dot-2"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Pemain Legenda Persija -->
+      <div class="bg-black bg-opacity-70 w-full h-full lg:py-24 py-12">
+        <div class="w-full h-full flex flex-col items-center gap-3">
+          <h1 class="text-3xl font-bold">PEMAIN LEGENDA PERSIJA</h1>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center p-10 overflow-hidden"
+        >
+          <!-- Slide content -->
+          <div
+            class="shadow-3xl flex lg:py-10 flex-row gap-10 overflow-x-auto snap-x snap-mandatory w-[90%] scroll-smooth"
+            style="scrollbar-width: none"
+          >
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/iswandi.jpg"
+                alt=""
+                class="w-full snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Iswadi Idris</h3>
+            </div>
+
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/bambas.jpg"
+                alt=""
+                class="w-full snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Bambas Pamungkang</h3>
+            </div>
+
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/patar tambunan.jpg"
+                alt=""
+                class="w-full snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Patar Tambunan</h3>
+            </div>
+
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/anjas.jpg"
+                alt=""
+                class="w-full h-auto snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Anjas Asmara</h3>
+            </div>
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/soetjipto.jpg"
+                alt=""
+                class="w-full h-auto snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Soetjipto Soentoro</h3>
+            </div>
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/oyong.jpg"
+                alt=""
+                class="w-full h-auto snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Oyong liza</h3>
+            </div>
+            <div class="min-w-[300px] flex flex-col items-center">
+              <img
+                src="../assets/img/sofyan.jpg"
+                alt=""
+                class="w-full h-auto snap-center"
+              />
+              <h3 class="text-white text-center mt-2">Sofyan Hadi</h3>
+            </div>
+          </div>
+
+          <!-- Dots Pagination -->
+          <div class="flex space-x-2 mt-6">
+            <div class="w-4 h-4 rounded-full bg-orange-500" id="dot-0"></div>
+            <div class="w-4 h-4 rounded-full bg-gray-500" id="dot-1"></div>
+            <div class="w-4 h-4 rounded-full bg-gray-500" id="dot-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 5 -->
+    <section>
+      <div
+        class="w-full h-full"
+        style="
+          background-image: url('../assets/img/bgpanggung.jpg');
+          background-size: cover;
+          background-size: 100% 100%;
+        "
+      >
+        <div
+          class="overflow-hidden bg-black bg-opacity-50 flex flex-col items-center gap-10 justify-center w-full lg:h-[700px] py-12 lg:py-24"
+        >
+          <h2 class="text-3xl font-bold text-white">THROPIES & MEDALS</h2>
+          <div
+            class="flex flex-row items-center gap-20 overflow-x-auto snap-x snap-mandatory scroll-smooth w-[40%] lg:w-[20%] filter shadow-inner"
+            style="scrollbar-width: none"
+          >
+            <div
+              class="lg:min-w-[200px] ml-10 flex flex-col items-center gap-8"
+            >
+              <img
+                src="../assets/img/gojek liga1.png"
+                alt=""
+                class="snap-center ml-7 w-auto lg:h-[300px]"
+              />
+              <span
+                class="text-center text-sm lg:text-lg font-semibold lg:font-bold text-white"
+                >KOMPETISI GOJEK LIGA 1 - 2018</span
+              >
+            </div>
+            <div class="lg:min-w-[200px] flex flex-col items-center gap-8">
+              <img
+                src="../assets/img/presiden.png"
+                alt=""
+                class="snap-center w-auto lg:h-[300px]"
+              />
+              <span
+                class="text-center text-sm lg:text-lg font-semibold lg:font-bold text-white"
+                >TURNAMEN PIALA DUNIA- 2018</span
+              >
+            </div>
+            <div class="lg:min-w-[200px] flex flex-col items-center gap-8">
+              <img
+                src="../assets/img/menpora.png"
+                alt=""
+                class="snap-center w-auto lg:h-[300px]"
+              />
+              <span
+                class="text-center text-sm lg:text-lg font-semibold lg:font-bold text-white"
+                >TURNAMEN PIALA MENPORA - 2021</span
+              >
+            </div>
+            <div
+              class="lg:min-w-[200px] mr-10 flex flex-col items-center gap-8"
+            >
+              <img
+                src="../assets/img/bsfcup.png"
+                alt=""
+                class="snap-start w-auto lg:h-[300px]"
+              />
+              <span
+                class="text-center text-sm lg:text-lg font-semibold lg:font-bold text-white"
+                >TURNAMEN BOOST SPORTSFIX SUPER CUP - 2018</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <footer class="bg-[#1d2228] px-4 lg:px-10 py-4 flex flex-row justify-between">
+    <div>
+      <img
+        src="../assets/img/white-logo15895633361617866331.png"
+        alt=""
+        class="lg:w-[170px] w-[100px]"
+      />
+    </div>
+    <div class="text-white flex flex-row gap-2 lg:gap-10 lg:pr-10 items-center">
+      <a href="../about/index.html" class="text-sm lg:text-lg"
+        >Tentang Persija</a
+      >
+      <a href="" class="text-sm lg:text-lg">Kontak</a>
+    </div>
+  </footer>
 </html>
